@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+    <title>Index</title>
+  </head>
+
+  <body>
+    <include src="./views/header.html"></include>
+    <div class="portada">
+      <picture class="portada__media">
+        <source
+          srcset="./assets/images/cerler.jpg"
+          type="image/webp"
+        />
+        <img class="portada__imagen"
+          src="./assets/images/cerler.jpg"
+          alt="Cerler"/>
+      </picture>
+      <h1 class="portada__titulo">Cerler</h1>
+      <p class="portada__subtitulo">Estación de esquí y destino de montaña</p>
+    </div>
+
+    <div class="descripcion">
+      <p class="descripcion__texto">Cerler es uno de los destinos más conocidos de los Pirineos aragoneses, famoso por sus pistas de esquí y su entorno natural impresionante. Rodeado de montañas altas y valles verdes, ofrece paisajes que enamoran a todo tipo de visitantes. <br>El pueblo combina la tranquilidad de la montaña con actividades al aire libre, desde esquí en invierno hasta senderismo y rutas en bicicleta en verano. Sus calles y alojamientos conservan el encanto típico de los Pirineos, con arquitectura tradicional y gastronomía local. <br>Además de disfrutar de la nieve o del paisaje, los visitantes pueden descubrir pequeños bares y restaurantes donde degustar platos típicos de Aragón, así como conocer la cultura y tradiciones de la zona. Cerler es ideal tanto para quienes buscan aventura como para quienes buscan relajarse rodeados de naturaleza.</p>
+    </div>
+
+    <div class="info">
+      <h2 class="info__titulo">Organiza tu escapada a medida</h2>
+
+      <a href="" class="info__cuadro">
+        <img src="./assets/images/ski.jpg" alt="Qué hacer" class="info__imagen">
+        <span class="info__texto">Qué hacer</span>
+      </a>      
+
+      <a href="" class="info__cuadro">
+        <img src="./assets/images/room.jpg" alt="Dónde dormir" class="info__imagen">
+        <span class="info__texto">Dónde dormir</span>
+      </a>
+
+      <a href="" class="info__cuadro">
+        <img src="./assets/images/restaurant.jpg" alt="Dónde comer" class="info__imagen">
+        <span class="info__texto">Dónde comer</span>
+      </a>
+
+    </div>
+
+    <section class="novedades">
+  <h2 class="novedades__titulo">Últimas novedades</h2>
+
+  <div class="novedades__grid">
+
+    <article class="novedades__post">
+      <img src="./assets/images/apertura-ski.jpg" alt="Apertura temporada">
+      <h3>Apertura de temporada</h3>
+      <p>La estación de Cerler da comienzo a la temporada con nuevas pistas y mejoras</p>
+      <a href="#">Leer más</a>
+    </article>
+
+    <article class="novedades__post">
+      <img src="./assets/images/senderismo.jpeg" alt="Nuevas rutas">
+      <h3>Nuevas rutas de senderismo</h3>
+      <p>Se han señalizado nuevos caminos para disfrutar del valle en verano.</p>
+      <a href="#">Leer más</a>
+    </article>
+
+    <article class="novedades__post">
+      <img src="./assets/images/deporte.jpg" alt="Eventos">
+      <h3>Eventos en el valle</h3>
+      <p>Descubre las actividades culturales y deportivas programadas este mes.</p>
+      <a href="#">Leer más</a>
+    </article>
+
+    <article class="novedades__post">
+      <img src="./assets/images/cerler.jpg" alt="Nuevas rutas">
+      <h3>Atardeceres desde Cerler</h3>
+      <p>Los miradores de Cerler se han convertido en uno de los grandes atractivos de la zona, especialmente al atardecer</p>
+      <a href="#">Leer más</a>
+    </article>
+  </div>
+</section>
+
+<section class="mapa">
+  <h2 class="mapa__titulo">Ubicación de Cerler</h2>
+  <p class="mapa__subtitulo">Encuentra Cerler en el mapa y planifica tu viaje</p>
+  <div id="map"></div>
+</section>
+    
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
+</html>

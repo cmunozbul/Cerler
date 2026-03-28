@@ -1,0 +1,13 @@
+{
+  "extends": ["stylelint-config-recommended-scss"],
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "scss/at-rule-no-unknown": true,
+    "selector-class-pattern": "^(uoc-)?[a-z0-9]+(__[a-z0-9]+)?(--[a-z0-9]+)?$",
+    "unit-allowed-list": ["%", "px", "rem"],
+    "property-no-unknown": true,
+    "at-rule-no-unknown": true,
+    "declaration-block-no-duplicate-properties": true,
+    "block-no-empty": true
+  }
+}
