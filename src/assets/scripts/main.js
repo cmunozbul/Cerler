@@ -22,12 +22,12 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-const boton = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu-list');
+const boton = document.querySelector('.menu__icono');
+const menu = document.querySelector('.menu__list');
 
 document.addEventListener('DOMContentLoaded', () => {
-  const boton = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('.menu-list');
+  const boton = document.querySelector('.menu__icono');
+  const menu = document.querySelector('.menu__list');
 
   if (boton && menu) {
     boton.addEventListener('click', () => {

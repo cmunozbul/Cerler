@@ -104,10 +104,8 @@ body {
 
 .descripcion__texto {
     font-size: 1rem;
-    padding: 2rem;
     max-width: 900px;
     margin: 0 auto;
-    font-size: 1rem;
     padding: 3rem 2rem;
     line-height: 1.7rem;
   }
@@ -258,7 +256,6 @@ header {
     
     a {
       display: inline-block;
-      padding: 1rem;
       color: variables.$color-azul;
       text-decoration: none;
       font-weight: bold;
@@ -355,7 +352,7 @@ header {
   }
 }
 
-.menu-toggle {
+.menu__icono {
   display: none;
 }
 
@@ -365,7 +362,7 @@ header {
     height: 200px;
   }
 
- .menu-toggle {
+ .menu__icono {
     display: block;
     font-size: 2rem;
     background: none;
@@ -374,7 +371,7 @@ header {
     cursor: pointer;
   }
 
-  .menu-list {
+  .menu__list {
     display: none;
     flex-direction: column;
     gap: 1rem;
@@ -384,7 +381,7 @@ header {
     text-align: center;
   }
 
-  .menu-list.activo {
+  .menu__list.activo {
     display: flex;
   }
 
@@ -403,5 +400,10 @@ header {
       width: 85%;
       margin-top: 1rem;
     }
+  }
+
+  .footer{
+    gap: 0rem; 
+    padding: 1rem;
   }
 }

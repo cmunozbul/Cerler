@@ -2,11 +2,12 @@
   "extends": ["stylelint-config-recommended-scss"],
   "plugins": ["stylelint-scss"],
   "rules": {
-    "scss/at-rule-no-unknown": true,
+    "scss/at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["use", "forward", "import"]
+    }],
     "selector-class-pattern": "^(uoc-)?[a-z0-9]+(__[a-z0-9]+)?(--[a-z0-9]+)?$",
-    "unit-allowed-list": ["%", "px", "rem"],
+    "unit-allowed-list": ["%", "px", "rem", "em", "vh", "fr", "s"],
     "property-no-unknown": true,
-    "at-rule-no-unknown": true,
     "declaration-block-no-duplicate-properties": true,
     "block-no-empty": true
   }
